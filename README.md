@@ -1,7 +1,7 @@
 # Custom Calendar
 
 A custom calendar app with optional 4 and 6 preset options made in Flutter with UI referenced from [Mevolve Test](https://www.figma.com/file/2p2qBV77ImBXnUqVYoi9yq/Mevolve-Test).
-The Flutter native classes ValueNotifier and ValueListenableBuilder have been used to rebuild the updates in UI.
+The Flutter native classes ValueNotifier and ValueListenableBuilder have been used to rebuild the updates in the UI.
 
 ### Download App
 [Download APK for Android](https://github.com/rohanubhare/custom-calendar/blob/master/apk/custom_calendar.apk)
