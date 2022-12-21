@@ -16,9 +16,9 @@ class ShowCalendarDialog extends StatefulWidget {
 }
 
 class _ShowCalendarDialogState extends State<ShowCalendarDialog> {
-  ValueNotifier<DateTime> _focusedDay = ValueNotifier(DateTime.now());
-  ValueNotifier<DateTime?> _selectedDay = ValueNotifier(null);
-  ValueNotifier<String?> _presetsVal = ValueNotifier(null);
+  final ValueNotifier<DateTime> _focusedDay = ValueNotifier(DateTime.now());
+  final ValueNotifier<DateTime?> _selectedDay = ValueNotifier(null);
+  final ValueNotifier<String?> _presetsVal = ValueNotifier(null);
 
   List fourPresetsName = [
     'Never ends',
