@@ -1,7 +1,4 @@
 // ignore_for_file: prefer_const_constructors
-
-import 'dart:ui';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -157,7 +154,6 @@ class _ShowCalendarDialogState extends State<ShowCalendarDialog> {
                 builder: (BuildContext context, DateTime? selectedDay,
                     Widget? child) {
                   return TableCalendar(
-                    // context: context,
                     rowHeight: 48,
                     focusedDay: _focusedDay.value,
                     firstDay: DateTime(1970),
@@ -220,7 +216,7 @@ class _ShowCalendarDialogState extends State<ShowCalendarDialog> {
                     children: [
                       SizedBox(
                         height: 36,
-                        width: 68,
+                        width: 80,
                         child: CupertinoButton(
                             color: Colors.blue[50],
                             padding: EdgeInsets.symmetric(horizontal: 12),
@@ -240,7 +236,7 @@ class _ShowCalendarDialogState extends State<ShowCalendarDialog> {
                       ),
                       SizedBox(
                         height: 36,
-                        width: 68,
+                        width: 80,
                         child: CupertinoButton(
                           color: Colors.blue,
                           padding: EdgeInsets.symmetric(horizontal: 12),

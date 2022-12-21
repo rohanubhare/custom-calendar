@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
               style: TextStyle(
                   fontSize: 18,
                   color: Colors.grey[800],
-                  fontWeight: FontWeight.bold),
+                  fontWeight: FontWeight.w500),
             ),
             const SizedBox(
               height: 24,
