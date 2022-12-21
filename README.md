@@ -2,6 +2,9 @@
 
 A custom calendar app with optional 4 and 6 preset options.
 
+### APK File
+[Download for Android]https://github.com/rohanubhare/custom-calendar/raw/master/custom_calendar.apk
+
 ### App Screenshots
 <p float="left">
   <img src="/screenshots/1.png" width="270" />
