@@ -41,6 +41,9 @@ class _ShowCalendarDialogState extends State<ShowCalendarDialog> {
   @override
   void initState() {
     super.initState();
+    if (widget.prevDate != null) {
+      _focusedDay.value = _selectedDay.value = widget.prevDate;
+    }
   }
 
   @override
@@ -328,7 +331,7 @@ class _ShowCalendarDialogState extends State<ShowCalendarDialog> {
         child: Text(
           text,
           style: TextStyle(
-            fontSize: 12,
+            fontSize: 13,
             color: (_presetsVal.value == text) ? Colors.white : Colors.blue,
           ),
         ),
