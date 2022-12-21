@@ -205,8 +205,10 @@ class _ShowCalendarDialogState extends State<ShowCalendarDialog> {
                               Widget? child) {
                             return Text(
                               selectedDay != null
-                                  ? DateFormat('dd MMM yyyy')
-                                      .format(selectedDay)
+                                  ? selectedDay == DateTime(2100)
+                                      ? 'Never ends'
+                                      : DateFormat('dd MMM yyyy')
+                                          .format(selectedDay)
                                   : '',
                               style:
                                   TextStyle(color: Colors.black, fontSize: 14),
@@ -273,7 +275,7 @@ class _ShowCalendarDialogState extends State<ShowCalendarDialog> {
           switch (text) {
             case 'Never ends':
               _focusedDay.value = DateTime.now();
-              _selectedDay.value = null;
+              _selectedDay.value = DateTime(2100);
               break;
 
             case '15 days later':

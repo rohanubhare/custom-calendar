@@ -148,7 +148,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         builder: (BuildContext context) {
                           return ShowCalendarDialog(
                             type: 'fourPresets',
-                            prevDate: _fourPresetsDate,
+                            prevDate: _fourPresetsDate.value,
                           );
                         });
                   }),
@@ -172,7 +172,9 @@ class _MyHomePageState extends State<MyHomePage> {
                                 width: 6,
                               ),
                               Text(
-                                DateFormat('dd MMM yyyy').format(date),
+                                date == DateTime(2100)
+                                    ? 'Never ends'
+                                    : DateFormat('dd MMM yyyy').format(date),
                                 style: dateStyle,
                               ),
                               const SizedBox(
@@ -213,7 +215,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         builder: (BuildContext context) {
                           return ShowCalendarDialog(
                             type: 'sixPresets',
-                            prevDate: _sixPresetsDate,
+                            prevDate: _sixPresetsDate.value,
                           );
                         });
                   }),
